@@ -27,15 +27,7 @@ public class PaintableScreen extends JPanel {
 		super.setBackground(Color.WHITE);
 	}
 	
-	//Will put the thread to sleep for a certain amount of milliseconds.
-	private static void wait(int ms) {
-		try {
-			Thread.sleep(ms);
-		} catch(Exception e){
-			System.out.println("There was an error: " + e + "\nThe program will now exit");
-			System.exit(ABORT);
-		}	
-	}
+
 	
 	//Paints everything the user does on the JPanel
 	//Assumes the lists of x and y components are identical in length
@@ -52,7 +44,6 @@ public class PaintableScreen extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		paintBrush(g);
-		//wait(2);
 		repaint();
 	}	
 }
