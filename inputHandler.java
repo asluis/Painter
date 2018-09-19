@@ -12,6 +12,7 @@ public class inputHandler implements MouseListener, MouseMotionListener{
 	//Will return a true/false answer if the mouse is/isn't pressed
 	private boolean isClicked = false; 
 	
+	//Will keep track of everything the user clicks on the Paintable JPanel
 	private ArrayList<Integer> xHistory = new ArrayList<Integer>();
 	private ArrayList<Integer> yHistory = new ArrayList<Integer>();
 	
@@ -59,7 +60,6 @@ public class inputHandler implements MouseListener, MouseMotionListener{
 		x = e.getX();
 		y = e.getY();	
 		isClicked = true;
-		System.out.println("MOUSE PRESSED AT: " + "(" + x + ", " + y + ")");
 		updateHistories();
 	}
 
@@ -74,14 +74,10 @@ public class inputHandler implements MouseListener, MouseMotionListener{
 			x = e.getX();
 			y = e.getY();
 			updateHistories();
-			System.out.println("PRESSED AND DRAGGED"); //TODO: remove
 		}
 		
 	}
 
 	@Override
-	public void mouseMoved(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void mouseMoved(MouseEvent arg0) {}
 }
