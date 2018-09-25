@@ -8,7 +8,7 @@ Painter is still being made, more features will come soon. Anything with an [X] 
 
 - Changing thickness of brush   []
 
-- A clear button    []
+- A clear button    [X]
 
 
 ## Information
