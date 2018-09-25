@@ -16,7 +16,6 @@ public class ClearButton extends JButton  {
 	
 	public ClearButton() {
 		clearBttn = new JButton();
-		clearBttn.setText("Clear All");
 	}
 
 	
