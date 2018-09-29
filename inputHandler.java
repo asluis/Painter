@@ -1,8 +1,11 @@
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
+
+
 
 public class inputHandler implements MouseListener, MouseMotionListener{
 
@@ -35,6 +38,12 @@ public class inputHandler implements MouseListener, MouseMotionListener{
 		yHistory.add(this.y);
 	}
 	
+	//Removes all data (Integers) from their constituent Arraylists, thus clearing the 
+	//JPanel from everything drawn by the user
+	public void clearScreen() {
+		xHistory.clear();
+		yHistory.clear();
+	}
 	
 	//Lets the xHistory list be accessed outside of the inputHandler class
 	public ArrayList<Integer> getXHistory(){
