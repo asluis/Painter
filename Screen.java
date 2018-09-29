@@ -1,6 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -13,7 +14,7 @@ public class Screen{
 
 	private inputHandler mouse = new inputHandler();
 	private PaintableScreen Screen = new PaintableScreen(THICKNESS, mouse);
-	private ClearButton clearButton = new ClearButton();
+	private JButton clearButton = new JButton("Clear All");
 	//Initializes the frame and the PaintableScreen
 	public Screen() {
 		JFrame frame = new JFrame("Painter by Luis Alvarez Sanchez");
