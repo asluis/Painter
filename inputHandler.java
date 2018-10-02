@@ -54,7 +54,7 @@ public class inputHandler implements MouseListener, MouseMotionListener{
 	public ArrayList<Integer> getYHistory(){
 		return this.yHistory;
 	}
-	
+	//--------------------------------------------Not Used
 	@Override
 	public void mouseClicked(MouseEvent arg0) {}
 
@@ -63,7 +63,7 @@ public class inputHandler implements MouseListener, MouseMotionListener{
 
 	@Override
 	public void mouseExited(MouseEvent arg0){}
-
+	//--------------------------------------------Not Used
 	@Override
 	public void mousePressed(MouseEvent e) {
 		x = e.getX();
